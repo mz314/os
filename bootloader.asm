@@ -8,7 +8,7 @@ mov cx, 1
 int 10h
 
 mov ah, 2
-mov al, 1
+mov al, 2
 mov ch, 0
 mov cl, 2
 mov dh, 0
