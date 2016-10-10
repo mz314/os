@@ -1,8 +1,10 @@
+#include "textmode.h"
+
 void main (void) 
 {
-    char * vga = (char *) 0xb8000 ;
-    *vga = 'X';
 
+    clear();
+    string_out("OS TEST", 0, 0);
     while(1){};
     return;
 
