@@ -5,8 +5,8 @@ all:
 	nasm -f elf64 loader.asm -o loader.o
 	
 
-	gcc -m64 -masm=intel -c kernel.c -o kernel.o
-	gcc -m64 -masm=intel -c textmode.c -o textmode.o
+	gcc -m64 -masm=intel -c kernel/kernel.c -o kernel.o
+	gcc -m64 -masm=intel -c kernel/textmode.c -o textmode.o
 	ld  -Ttext 0x100000 -o kernel.elf loader.o textmode.o kernel.o 
 	objcopy -R .note -R .comment -S -O binary kernel.elf kernel.bin
 	
