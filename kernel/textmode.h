@@ -1,7 +1,7 @@
 #ifndef SCREEN_H
 #define	SCREEN_H
 
-#define TEXTMODE_START  0xb8000
+#define TEXTMODE_START  0xB8000
 #define TEXTMODE_COLS  25
 #define TEXTMODE_ROWS 80
 
