@@ -5,9 +5,9 @@
 void main (void) 
 {
 
-    //textmode_clear();
+    textmode_clear();
    // pio_ata_reset();
-    textmode_char_out('Q', 0, 0);
+    
     textmode_string_out("OS TEST", 0, 0);
     while(1){};
     return;
